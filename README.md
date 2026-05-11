@@ -4,10 +4,13 @@
 
 # Integrated Machine Learning Framework & Interactive Analytics Dashboard
 
-## 🌟 Project Overview
 This repository hosts a sophisticated, end-to-end Machine Learning ecosystem designed to transform raw datasets into actionable predictive insights. The project centralizes the entire data science lifecycle—from automated ETL (Extract, Transform, Load) processes and rigorous statistical modeling to the deployment of a high-performance interactive web application. By leveraging modern MLOps principles, this framework ensures that complex predictive logic is both scalable and accessible to non-technical stakeholders through an intuitive user interface.
 
 ---
+
+
+## 🌟 Project Overview
+This repository hosts a sophisticated, end-to-end Machine Learning and Data Analytics ecosystem designed to transform raw scam report datasets into actionable predictive insights. The project centralizes the entire data science lifecycle—from automated ETL (Extract, Transform, Load) processes to the deployment of a high-performance interactive web application. 
 
 ## 🛠️ The Architecture: How It Was Created
 The development of this application followed a multi-stage engineering workflow to ensure data integrity and model robustness:
@@ -27,6 +30,74 @@ The app was developed using the **Streamlit** framework to serve as the project'
 * **Real-time Inference:** Connecting the serialized model backend (Pickle/Joblib) to the UI for instantaneous value predictions.
 * **Advanced Visualization:** Integrating **Plotly** and **Seaborn** to provide a narrative audit of the data, allowing users to visualize trends and feature importance dynamically.
 
+  
+# 🕵️‍♂️ Scam Analytics Dashboard: A Cry for Protection
+
+The **Scam Analytics Dashboard** is the centerpiece of this project, acting as an interactive investigation tool designed for high-level stakeholders (such as the ACMA Commissioner and the National Anti-Scam Centre). It transforms raw data into a two-part narrative that identifies the scale of the financial crisis in Australia and investigates the specific demographics at risk.
+
+---
+
+## 🛠️ The Architecture: How It Was Created
+The development of this application followed a multi-stage engineering workflow to ensure data integrity and model robustness:
+
+### 1. Data Engineering & Orchestration
+The foundation rests on a structured data pipeline. We implemented automated ingestion scripts to handle diverse data formats, followed by a cleaning phase that utilizes advanced imputation techniques for missing values and robust outlier detection. Using tools like **Pandas** and **dbt**, the raw data is modeled into a "source of truth" suitable for high-dimensional analysis.
+
+### 2. Algorithmic Optimization
+The modeling engine was built using a suite of supervised learning algorithms, including **XGBoost**, **Random Forest**, and **K-Nearest Neighbors**.
+* **Feature Engineering:** Implementation of categorical encoding and feature scaling to normalize input variance.
+* **Validation:** The final model was stress-tested against unseen data to ensure generalizability and prevent overfitting.
+
+### 3. Streamlit Application Deployment (The Dashboard)
+The "Streamline" app was developed using the **Streamlit** framework to serve as the project's delivery layer. The frontend was architected to support:
+* **Narrative Arc Design:** Unlike static dashboards, this app uses a storytelling framework:
+    * **Act 1: The Anomaly:** Establishes the macro-scale of the problem (Total Losses, KPIs).
+    * **Act 2: The Investigation:** Drills down into the "Who, Where, and How" (Victim Profiles, Geographic Risk).
+* **Session State Management:** Ensuring a smooth user experience during complex parameter adjustments.
+* **Advanced Visualization:** Integrating **Plotly** and **Seaborn** to provide a narrative audit of the data.
+
+---
+
+## 📊 Dashboard Features & Insights
+
+### 🛡️ Act 1: Macro-Level Insights
+* **Key Performance Indicators (KPIs):** Instant visibility into total reports (126k+), total financial loss ($257M+), and average loss per report ($2.0k).
+* **Loss Distribution:** Ranked horizontal bar charts identifying **Investment Scams** as the dominant threat, alongside donut charts showing loss percentages.
+
+### 🔍 Act 2: Victim & Risk Investigation
+* **Multi-View Tabs:** Toggle between **Victim Profile**, **Geographic Risk**, **Contact Channels**, and **Risk Scores**.
+* **Volume vs. Severity Matrix:** A sophisticated scatter plot mapping report volume against average loss. This helps identify high-risk groups, such as the **65 and over** demographic which contributes the largest total loss.
+* **Key Insight Callouts:** Automated executive summaries that update based on your current filters.
+
+### 🎛️ Dynamic Filter Controls (The "Lens")
+The sidebar allows stakeholders to "change the lens" of the story instantly:
+* **Demographics:** Age group filters to isolate generational impacts.
+* **Scam Categories:** 12 different scam types including Account Takeover, Phishing, and Investment scams.
+* **Temporal Slider:** A dual-point slider covering an 11-month window (Jan 2025 – Nov 2025).
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+* Python 3.9+
+* Pip
+
+### Installation
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/16aryan/Scam_Project_Collaborator_Part3_Data_Visualisation.git](https://github.com/16aryan/Scam_Project_Collaborator_Part3_Data_Visualisation.git)
+    cd Scam_Project_Collaborator_Part3_Data_Visualisation
+    ```
+2.  **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+3.  **Run the application:**
+    ```bash
+    streamlit run app.py
+    ```
+
 ---
 
 ## 🚀 Key Features
@@ -36,6 +107,14 @@ The app was developed using the **Streamlit** framework to serve as the project'
 * **Scalable Infrastructure:** Designed to be containerized and deployed via cloud environments.
 
 ---
+
+**** Screenshots****
+
+<img width="1799" height="1042" alt="Screenshot 2026-05-11 at 22 34 47" src="https://github.com/user-attachments/assets/e98087b5-8cfd-4beb-ad93-6818dbda2e89" />
+<img width="1800" height="1044" alt="Screenshot 2026-05-11 at 22 34 56" src="https://github.com/user-attachments/assets/750315c0-2af5-4394-81f0-8d47cb2f93f2" />
+
+
+
 
 ## 💻 Installation & Usage
 
