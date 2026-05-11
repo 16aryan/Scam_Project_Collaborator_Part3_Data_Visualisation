@@ -112,6 +112,7 @@ The sidebar allows stakeholders to "change the lens" of the story instantly:
 
 <img width="1799" height="1042" alt="Screenshot 2026-05-11 at 22 34 47" src="https://github.com/user-attachments/assets/e98087b5-8cfd-4beb-ad93-6818dbda2e89" />
 <img width="1800" height="1044" alt="Screenshot 2026-05-11 at 22 34 56" src="https://github.com/user-attachments/assets/750315c0-2af5-4394-81f0-8d47cb2f93f2" />
+<img width="3058" height="1978" alt="image" src="https://github.com/user-attachments/assets/42732c39-fbf0-4914-83d2-cd7fcaa0dbbf" />
 
 
 
