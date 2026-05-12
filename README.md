@@ -110,11 +110,11 @@ The sidebar allows stakeholders to "change the lens" of the story instantly:
 
 **** Screenshots****
 
-<img width="1799" height="1042" alt="Screenshot 2026-05-11 at 22 34 47" src="https://github.com/user-attachments/assets/e98087b5-8cfd-4beb-ad93-6818dbda2e89" />
-<img width="1800" height="1044" alt="Screenshot 2026-05-11 at 22 34 56" src="https://github.com/user-attachments/assets/750315c0-2af5-4394-81f0-8d47cb2f93f2" />
-<img width="3058" height="1978" alt="image" src="https://github.com/user-attachments/assets/42732c39-fbf0-4914-83d2-cd7fcaa0dbbf" />
-
-
+<img width="1270" height="570" alt="Screenshot 2026-05-12 at 21 46 06" src="https://github.com/user-attachments/assets/09a9e87b-4f47-4d9e-aae2-40aca419a019" />
+<img width="672" height="456" alt="Screenshot 2026-05-12 at 21 46 31" src="https://github.com/user-attachments/assets/63b232aa-281e-4240-80d2-4c1ac4352355" />
+<img width="670" height="404" alt="Screenshot 2026-05-12 at 21 46 47" src="https://github.com/user-attachments/assets/e984cbc1-2b23-4e48-a82b-8c1c13040144" />
+<img width="668" height="533" alt="Screenshot 2026-05-12 at 21 47 03" src="https://github.com/user-attachments/assets/235cbf33-3696-4681-ae84-0fa5b06d4894" />
+<img width="672" height="307" alt="Screenshot 2026-05-12 at 21 47 19" src="https://github.com/user-attachments/assets/f609da6f-cbc2-4eeb-82c2-c7f950e81a13" />
 
 
 ## 💻 Installation & Usage
