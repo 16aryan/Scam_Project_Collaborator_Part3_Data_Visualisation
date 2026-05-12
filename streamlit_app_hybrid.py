@@ -1,5 +1,5 @@
 """
-Scammed in Australia — Interactive Streamlit Dashboard (V1 + V2 Hybrid)
+Scammed in Australia — Interactive Streamlit Dashboard
 Group 19 | MDSI Data Visualisation & Storytelling | UTS 2026
 
 Run with:
@@ -349,8 +349,9 @@ hr {
 .main [data-testid="stCaptionContainer"],
 .main .stCaption,
 .main small {
-    color: #cbd5e1 !important;
+    color: #f8fafc !important; 
     font-size: 0.95rem !important;
+    opacity: 1 !important; 
 }
 
 .main label[data-testid="stWidgetLabel"],
@@ -776,7 +777,7 @@ with sc3:
 #stakeholder + narrative arc
 st.markdown(f"""
 <div class="context-pill-row">
-    <span class="hero-pill hero-pill-accent">🎯 Stakeholder: ACMA Commissioner</span>
+    <span class="hero-pill hero-pill-accent">🎯 Stakeholders: ACMA Commissioner + NASC</span>
     <span class="hero-pill">📖 Narrative Arc: The Detective</span>
     <span class="hero-pill">📍 Current Lens: {selected_state}</span>
     <span class="hero-pill">{len(selected_ages)} age groups · {len(selected_types)} scam types</span>
@@ -1319,8 +1320,8 @@ st.plotly_chart(fig_impact, use_container_width=True)
 
 st.markdown("<br>", unsafe_allow_html=True)
 section_header(
-    "🎯 The Ask: To the ACMA Commissioner",
-    "You have the regulatory authority. The data shows where to act. Here is what intervention looks like as policy."
+    "🎯 The Ask: To ACMA & the National Anti-Scam Centre",
+    "ACMA has the regulatory power. NASC has the coordination infrastructure. Together, here is what intervention looks like as policy."
 )
 
 #compute action context dynamically
@@ -1348,8 +1349,8 @@ with ac2:
     st.markdown(f"""
     <div class="action-card">
         <div class="action-verb">Fund</div>
-        <div class="action-body">A National Anti-Scam Centre with ${budget}M annual budget</div>
-        <div class="action-why">Projected to prevent {money_fmt(prevented)} — BCR {bcr:.1f}×</div>
+        <div class="action-body">Expand NASC beyond its current $58M (2-year) baseline to ${budget}M annual</div>
+        <div class="action-why">Modelled scenario: prevent {money_fmt(prevented)} — BCR {bcr:.1f}×</div>
     </div>
     """, unsafe_allow_html=True)
 with ac3:
@@ -1361,19 +1362,30 @@ with ac3:
     </div>
     """, unsafe_allow_html=True)
 
-
 st.markdown(f"""
 <div class="cta-box">
     <div class="cta-headline">Every day of inaction costs Australians {money_fmt(preventable_per_day)}.</div>
     <div class="cta-body">
         The data is clear. The interventions are known. The only variable left is political will.
-        We invite the ACMA Commissioner to act before the next quarter's numbers come in.
+        We invite the <b>ACMA Commissioner</b> and the <b>National Anti-Scam Centre</b> to act
+        before the next quarter's numbers come in.
     </div>
 </div>
 """, unsafe_allow_html=True)
 
-st.markdown("---")
-
+#methodology disclaimer
+st.markdown(
+    """
+    <div style="color: #f8fafc; font-size: 0.9rem; opacity: 0.9;">
+        ⚙️ <b>Methodology note:</b> BCR projections use conservative assumptions 
+        (60% baseline policy impact, 40% for targeted segments). Reference points: 
+        UK Online Safety Act case studies show 2-3× BCR; Singapore Anti-Scam Centre 
+        reports 4-6× BCR. Actual outcomes depend on implementation quality and 
+        political support. Adjust sliders above to test alternative scenarios.
+    </div>
+    """, 
+    unsafe_allow_html=True
+)
 #data explorer
 
 with st.expander("🔎 Open Detailed Data Explorer"):
@@ -1395,7 +1407,7 @@ st.markdown("""
 <hr>
 <small class="small-muted">
 <b>Data Sources:</b> Scamwatch/ACCC · ABS Cat. 3235.0 · ACMA Enforcement Report · ACMA Communications Survey |
-<b>Group 19:</b> Ishaan Gaware · Aryan Goel · Aishwarya · Nhi Nguyen · Neko/Yan Hao · Yuxiang Wang · Faisal |
+<b>Group 19:</b> Ishaan · Aryan · Aishwarya · Nhi · Yan · Yuxiang · Faisal |
 MDSI Data Visualisation & Storytelling · UTS · 2026
 </small>
 """, unsafe_allow_html=True)
