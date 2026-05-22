@@ -1,5 +1,3 @@
-<div align="center">
-
 # Scammed in Australia — A Cry for Protection
 An interactive data narrative exposing Australia's scam crisis and who is being left most vulnerable.
 
@@ -7,9 +5,7 @@ An interactive data narrative exposing Australia's scam crisis and who is being 
 
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-181717?logo=github&logoColor=white)](https://github.com/16aryan/Scam_Project_Collaborator_Part3_Data_Visualisation)
 [![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B?logo=streamlit&logoColor=white)](http://localhost:8501)
-[![License](https://img.shields.io/badge/Data%20License-CC%20BY%204.0-lightgrey)](https://creativecommons.org/licenses/by/4.0/)
 
----
 
 ## Team Members
 
@@ -22,8 +18,6 @@ An interactive data narrative exposing Australia's scam crisis and who is being 
 | **Yan Hao** | 25976440 | Developer | Streamlit dashboard build, session state, deployment, data caching |
 | **Aishwarya Pandey** | 25524822 | Artist / Orator | Miro board, persona development, presentation script, slide design |
 | **Yuxiang Wang** | 25509050 | Analyst | What-if modelling, data dictionary, ACMA enforcement analysis |
-
----
 
 ## Table of Contents
 
@@ -41,7 +35,6 @@ An interactive data narrative exposing Australia's scam crisis and who is being 
 12. [Limitations & Future Work](#12-limitations--future-work)
 13. [Data Provenance & Credits](#13-data-provenance--credits)
 
----
 
 ## 1. Problem Statement
 
@@ -69,9 +62,8 @@ Australia loses **$28 million to scams every single month**, and online enforcem
 
 ### Central Question
 
-*"Is Australia losing the war on scams — and who is being left most vulnerable?"*
+"Is Australia losing the war on scams — and who is being left most vulnerable?"
 
----
 
 ## 2. Dataset Description
 
@@ -201,15 +193,15 @@ model['bcr'] = model['prevented'].sum() / program_budget
 
 ## 5. Dashboard Walkthrough
 
-> All screenshots taken from the live Streamlit dashboard — Group 19, May 2026.
+All screenshots taken from the live Streamlit dashboard — Group 19, May 2026.
 
 ### Act 1: The Anomaly — Overview
 
 Act 1 sets the scene for an executive audience not technically inclined in the field of scams. The KPI cards display: Total Reports, Total $ Lost, Months Covered, and Average Loss/Report. The sidebar allows filtering by state, age group, scam type, and time window. All charts update dynamically with every selection.
 
-![Act 1 — The Anomaly: Overview](outputs/dash_act1_overview.png)
+![Act 1 — The Anomaly: Overview](https://github.com/16aryan/Scam_Project_Collaborator_Part3_Data_Visualisation/blob/3e774ffb9985efc94f809b2f7f62c000847a5e8d/dash_act1_overview.png)
 
-> **Figure 1:** Act 1 — The Anomaly: Overview dashboard showing **126,649 reports** and **$257.9M in losses**. Investment scams account for 45.9% of all losses (donut chart, right). The "Current lens" banner updates in real-time as filters change — **Advanced Feature 1** in action.
+**Figure 1:** Act 1 — The Anomaly: Overview dashboard showing **126,649 reports** and **$257.9M in losses**. Investment scams account for 45.9% of all losses (donut chart, right). The "Current lens" banner updates in real-time as filters change — **Advanced Feature 1** in action.
 
 ---
 
@@ -217,9 +209,9 @@ Act 1 sets the scene for an executive audience not technically inclined in the f
 
 The Victim Profile tab shows which age groups are being targeted and to what degree. The diverging bar chart shows report count and average loss per age group. The Risk Matrix plots volume (number of reports) against severity (average loss) to cleanly separate two very different types of targets.
 
-![Act 2 — Victim Profile](outputs/dash_act2_victim.png)
+![Act 2 — Victim Profile](https://github.com/16aryan/Scam_Project_Collaborator_Part3_Data_Visualisation/blob/3e774ffb9985efc94f809b2f7f62c000847a5e8d/dash_act2_victim.png)
 
-> **Figure 2:** Act 2 — Victim Profile: Reports vs Average Loss by Age Group and Risk Matrix. **45–54 has the highest average loss per report; 65+ contributes the largest total loss** — two different problems requiring two different policy interventions.
+**Figure 2:** Act 2 — Victim Profile: Reports vs Average Loss by Age Group and Risk Matrix. **45–54 has the highest average loss per report; 65+ contributes the largest total loss** — two different problems requiring two different policy interventions.
 
 ---
 
@@ -227,9 +219,9 @@ The Victim Profile tab shows which age groups are being targeted and to what deg
 
 The Geographic Risk tab shows losses by state in raw numbers and per-capita exposure. The key finding: while NSW has high raw losses, **WA has the highest loss per person** — raw totals alone would mislead resource allocation.
 
-![Act 2 — Geographic Risk](outputs/dash_act2_geographic.png)
+![Act 2 — Geographic Risk](https://github.com/16aryan/Scam_Project_Collaborator_Part3_Data_Visualisation/blob/3e774ffb9985efc94f809b2f7f62c000847a5e8d/dash_act2_geographic.png)
 
-> **Figure 3:** Act 2 — Geographic Risk: Raw Losses by State vs Per-Capita Loss Exposure. WA leads at **$1.4M per 100k residents** — only visible after the Scamwatch × ABS population enrichment join.
+**Figure 3:** Act 2 — Geographic Risk: Raw Losses by State vs Per-Capita Loss Exposure. WA leads at **$1.4M per 100k residents** — only visible after the Scamwatch × ABS population enrichment join.
 
 ---
 
@@ -237,9 +229,9 @@ The Geographic Risk tab shows losses by state in raw numbers and per-capita expo
 
 The Contact Channels tab shows channel losses and a heatmap of channel share by scam type. Under all filter configurations, **online is the largest loss channel** — policy must focus on online platforms, not just telcos. Relationship scams flow 81% online; job scams 79% online.
 
-![Act 2 — Contact Channels](outputs/dash_act2_contact.png)
+![Act 2 — Contact Channels](https://github.com/16aryan/Scam_Project_Collaborator_Part3_Data_Visualisation/blob/3e774ffb9985efc94f809b2f7f62c000847a5e8d/dash_act2_contact.png))
 
-> **Figure 4:** Act 2 — Contact Channels: Losses by Channel and Channel Share Heatmap. Hover any heatmap cell to see exact % loss share — **Advanced Feature 3** (contextual tooltips) in action.
+**Figure 4:** Act 2 — Contact Channels: Losses by Channel and Channel Share Heatmap. Hover any heatmap cell to see exact % loss share — **Advanced Feature 3** (contextual tooltips) in action.
 
 ---
 
@@ -247,9 +239,9 @@ The Contact Channels tab shows channel losses and a heatmap of channel share by 
 
 The Risk Score tab shows a composite score for each scam type based on report volume, total losses, and average loss per report. **Investment scams rank 87.5/100** — this balances scale, severity, and frequency, offering a policy-neutral prioritisation framework not available in raw Scamwatch data.
 
-![Act 2 — Risk Score](outputs/dash_act2_riskscore.png)
+![Act 2 — Risk Score](https://github.com/16aryan/Scam_Project_Collaborator_Part3_Data_Visualisation/blob/3e774ffb9985efc94f809b2f7f62c000847a5e8d/dash_act2_riskscore.png))
 
-> **Figure 5:** Act 2 — Scam Risk Score: Composite priority ranking by scam type. Investment scams score 87.5 despite only 4,161 reports because each incident costs **$28,450 on average**.
+**Figure 5:** Act 2 — Scam Risk Score: Composite priority ranking by scam type. Investment scams score 87.5 despite only 4,161 reports because each incident costs **$28,450 on average**.
 
 ---
 
@@ -257,9 +249,9 @@ The Risk Score tab shows a composite score for each scam type based on report vo
 
 The Compare Segments tab allows any two states, age groups, or scam types to be compared side-by-side. Loss difference, report difference, and average loss difference are all calculated dynamically.
 
-![Act 2 — Compare Segments](outputs/dash_act2_compare.png)
+![Act 2 — Compare Segments](https://github.com/16aryan/Scam_Project_Collaborator_Part3_Data_Visualisation/blob/3e774ffb9985efc94f809b2f7f62c000847a5e8d/dash_act2_compare.png))
 
-> **Figure 6:** Act 2 — Compare Segments: NSW vs VIC comparison showing **$41.1M loss difference** and 7,965 more reports. Average loss/report is $728 higher in NSW — a different scam-type mix requiring a different intervention.
+**Figure 6:** Act 2 — Compare Segments: NSW vs VIC comparison showing **$41.1M loss difference** and 7,965 more reports. Average loss/report is $728 higher in NSW — a different scam-type mix requiring a different intervention.
 
 ---
 
@@ -267,9 +259,9 @@ The Compare Segments tab allows any two states, age groups, or scam types to be 
 
 Act 3 is the policy decision engine. Users select a policy scenario, primary target focus, and use sliders for estimated loss reduction (%) and program budget ($M). **Projected Outcomes** (Losses Prevented, Net Benefit, BCR) update in real-time. The auto-generated Executive Summary combines the Detective's Verdict and four Recommended Actions, refreshing with every filter and slider change.
 
-![Act 3 — What-If Simulator](outputs/dash_act3_whatif.png)
+![Act 3 — What-If Simulator](https://github.com/16aryan/Scam_Project_Collaborator_Part3_Data_Visualisation/blob/3e774ffb9985efc94f809b2f7f62c000847a5e8d/dash_act3_whatif.png))
 
-> **Figure 7:** Act 3 — What-If Simulator: Policy scenario modelling with BCR and auto-generated executive summary. Under the Conservative scenario: **$33.3M prevented, BCR 1.1×, Net Benefit $3.3M** — **Advanced Feature 2** (What-If parameterisation) in action.
+**Figure 7:** Act 3 — What-If Simulator: Policy scenario modelling with BCR and auto-generated executive summary. Under the Conservative scenario: **$33.3M prevented, BCR 1.1×, Net Benefit $3.3M** — **Advanced Feature 2** (What-If parameterisation) in action.
 
 ---
 
@@ -277,33 +269,33 @@ Act 3 is the policy decision engine. Users select a policy scenario, primary tar
 
 ### Team Members
 
-![Group 19 — Team Members and Roles](outputs/team_members.png)
+![Group 19 — Team Members and Roles](https://github.com/16aryan/Scam_Project_Collaborator_Part3_Data_Visualisation/blob/44477593fcf1266e8f9eb6da991de7ab51bf37b9/team.png))
 
-> **Figure 8:** Group 19 — 7 members across Architect, Analyst, Developer, and Artist/Orator roles.
+**Figure 8:** Group 19 — 7 members across Architect, Analyst, Developer, and Artist/Orator roles.
 
 ### Dataset Selection Vote
 
 A democratic vote was used to choose the dataset. **63% voted for the Scamwatch topic** ("Target prevention at the channels and scam types causing the most harm"), demonstrating strong group alignment on the chosen subject.
 
-![Dataset Selection Vote](outputs/dataset_vote.png)
+![Dataset Selection Vote](https://github.com/16aryan/Scam_Project_Collaborator_Part3_Data_Visualisation/blob/44477593fcf1266e8f9eb6da991de7ab51bf37b9/vote.jpg))
 
-> **Figure 9:** Dataset selection vote — Scamwatch topic won with **63% of team votes**.
+**Figure 9:** Dataset selection vote — Scamwatch topic won with **63% of team votes**.
 
 ### OCEAN Persona Board
 
 Each team member determined their MDSI role according to their personality type using the OCEAN framework. Roles assigned: Architect (Ishaan), Analyst (Aryan, Nhi, Yuxiang), Developer (Yan), Artist/Orator (Faisal, Aishwarya).
 
-![OCEAN Persona Board](outputs/ocean_personas.png)
+![OCEAN Persona Board](https://github.com/16aryan/Scam_Project_Collaborator_Part3_Data_Visualisation/blob/44477593fcf1266e8f9eb6da991de7ab51bf37b9/persona.jpg))
 
-> **Figure 10:** Miro Board — OCEAN Persona sticky notes for all team members.
+**Figure 10:** Miro Board — OCEAN Persona sticky notes for all team members.
 
 ### Project Gantt Chart
 
 The project ran from April to May 2026 with milestones including: Dataset Confirmation, Role Allocation, Data Review, Miro Board, Data Cleaning & Preparation, Advanced Feature Planning, Presentation Slides & Script, Final Presentation, and Video Walkthrough & Documentation.
 
-![Project Gantt Chart](outputs/gantt_chart.png)
+![Project Gantt Chart](https://github.com/16aryan/Scam_Project_Collaborator_Part3_Data_Visualisation/blob/44477593fcf1266e8f9eb6da991de7ab51bf37b9/gantt%20chart.jpg))
 
-> **Figure 11:** Gantt chart showing project milestones from April 11 to May 22, 2026.
+**Figure 11:** Gantt chart showing project milestones from April 11 to May 22, 2026.
 
 ---
 
@@ -311,7 +303,7 @@ The project ran from April to May 2026 with milestones including: Dataset Confir
 
 ### Narrative Arc: The Detective
 
-> *"Start with a data anomaly (the 'crime') and uncover the 'culprit' (the variable)."*
+"Start with a data anomaly (the 'crime') and uncover the 'culprit' (the variable)."
 
 The dashboard follows the Detective arc across three acts:
 
@@ -333,14 +325,14 @@ The dashboard follows the Detective arc across three acts:
 
 #### Story 1 — The ACMA Commissioner
 
-> *"As a Commissioner on the ACMA, I would like to have a single-screen view of losses by category and whether our enforcement efforts are hitting the mark, to demonstrate data-driven policy leadership."*
+"As a Commissioner on the ACMA, I would like to have a single-screen view of losses by category and whether our enforcement efforts are hitting the mark, to demonstrate data-driven policy leadership."
 
 - **Acceptance Criteria:** Dashboard loads in <5 seconds; all Act 1 KPIs displayed without scrolling; enforcement gap clearly identified
 - **Definition of Done:** Commissioner can present without further analysis
 
 #### Story 2 — The NASC Triage Officer
 
-> *"As a National Anti-Scam Centre analyst, I want to know how many victims are in each state and age group — so I can focus outreach campaigns and victim support resources efficiently."*
+"As a National Anti-Scam Centre analyst, I want to know how many victims are in each state and age group — so I can focus outreach campaigns and victim support resources efficiently."
 
 - **Acceptance Criteria:** Top 3 vulnerable segments clearly identified and ranked
 - **Definition of Done:** Officer can create a resource allocation brief without further analysis
@@ -392,7 +384,7 @@ In Act 3, the "Detective's Verdict" section is dynamically generated from the cu
 - The selected policy package result and BCR
 - Four Recommended Actions — all updated whenever filters or sliders change
 
-### Feature 4: Composite Risk Score *(Bonus)*
+### Feature 4: Composite Risk Score 
 
 The Risk Score tab calculates a score for each scam type (report volume 40%, total loss 35%, average loss per report 25%) scaled to 0–100. Presented as both a horizontal bar chart and an interactive data table — a policy-neutral, multi-dimensional prioritisation tool not available in the raw Scamwatch data.
 
@@ -505,10 +497,3 @@ The dashboard will open at `http://localhost:8501`
 ---
 
 <div align="center">
-
-**Group 19 · MDSI Data Visualisation & Narratives · UTS · Autumn 2026**
-
-*"Every $1 invested in targeted digital literacy prevents $4.30 in scam losses."*
-
-</div>
-
