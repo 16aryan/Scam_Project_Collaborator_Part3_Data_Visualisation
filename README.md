@@ -4,7 +4,7 @@ An interactive data narrative exposing Australia's scam crisis and who is being 
 **Group 19 · 36104 Data Visualisation & Narratives**
 
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-181717?logo=github&logoColor=white)](https://github.com/16aryan/Scam_Project_Collaborator_Part3_Data_Visualisation)
-[![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B?logo=streamlit&logoColor=white)](http://localhost:8501)
+[![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B?logo=streamlit&logoColor=white)](https://australianscamsgroup19.streamlit.app/)
 
 
 ## Team Members
